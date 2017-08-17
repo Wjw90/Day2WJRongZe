@@ -1,0 +1,11 @@
+<app-addcity [city]= "city" (generateoutput)="appmethod($event)"></app-addcity>
+<br />
+<strong>{{city}}</strong>
+<br/>
+<div>
+<ul class="list-group">
+  <li class="list-group-item" *ngFor="let city of citylist" (click)="getCity(city)">{{city}}</li>
+</ul>
+</div>
+
+

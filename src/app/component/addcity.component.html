@@ -1,0 +1,14 @@
+<form (ngSubmit)= "addCity()" #regForm="ngForm" novalidate>
+  Add City:
+  <input type = "text" name="city" required ngModel>
+  <button type="submit" class="btn btn-primary active" [disabled]="!regForm.valid">Submit</button>
+</form>
+      Visibility: {{visibility}}
+<table>
+  <tr *ngFor="let i of weather">
+    <td>
+       <img src ="http://openweathermap.org/img/w/{{i.icon}}.png" alt="">
+      </td>
+  </tr>
+</table>
+
